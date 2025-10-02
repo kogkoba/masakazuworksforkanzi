@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <title>漢字手書きテスト</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <!-- ここは前回のUIそのまま貼り付けOK（出題表示/ボタン/キャンバス等） -->
+    <!-- 出題テキスト表示 -->
+    <div class="bar"><div>出題：<span id="problem" class="problem"></span></div></div>
+    <div class="canvas-wrap">
+      <canvas id="draw" width="640" height="640"></canvas>
+      <canvas id="under" class="underlay" width="640" height="640"></canvas>
+    </div>
+    <!-- ボタン群など … -->
+  </div>
+
+  <script src="./js/grade.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
